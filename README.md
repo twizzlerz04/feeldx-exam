@@ -24,7 +24,7 @@ yarn install
 ```
 
 3. Configure XAMPP:
-   - Place the project in: `/Applications/XAMPP/xamppfiles/htdocs/feeldx-exam`
+   - Place the project in: `/{Your project/html path}/feeldx-exam`
    - Start XAMPP Apache server
 
 4. Setup environment:
@@ -44,6 +44,8 @@ yarn dev
 feeldx-exam/
 ├── resources/
 │   ├── js/
+│   │   ├── Layouts/
+│   │   │   └── Layout.vue
 │   │   ├── Pages/
 │   │   │   └── Home.vue
 │   ├── css/
