@@ -1,4 +1,4 @@
-# FeelDX Project Documentation
+# FeelDX Practical Exam
 
 ## Overview
 FeelDX is a Vue.js-based web application showcasing interactive carousels, responsive design, and modern UI components.
