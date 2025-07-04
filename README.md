@@ -18,6 +18,7 @@ cd feeldx-exam
 
 2. Install dependencies:
 ```bash
+composer install
 npm install
 # or
 yarn install
@@ -66,27 +67,13 @@ feeldx-exam/
 ## Development
 Start the development server:
 ```bash
+php artisan serve
+```
+
+```bash
 npm run dev
 # or
 yarn dev
-```
-
-Build for production:
-```bash
-npm run build
-# or
-yarn build
-```
-
-## Component Usage
-
-### Carousel Implementation
-```vue
-<script setup>
-import { ref, onMounted } from 'vue'
-const currentSlide = ref(0)
-const totalSlides = 2
-</script>
 ```
 
 ## Browser Support
