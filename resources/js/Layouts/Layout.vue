@@ -73,9 +73,7 @@ onUnmounted(() => {
 </script>
 <template>
     <div>
-        <!-- <header class="sticky top-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-md">
-             -->
-             <header :class="[
+        <header :class="[
                 'sticky top-0 z-50 transition-all duration-300',
                 isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md' : 'bg-white'
             ]">
@@ -98,7 +96,7 @@ onUnmounted(() => {
             <nav class="bg-white/75 backdrop-blur-sm">
                 <div class="max-w-screen-xl px-4 py-3 mx-auto border-b">
                     <div class="flex justify-center items-center">
-                        <ul class="flex flex-row font-medium mt-0 space-x-12 rtl:space-x-reverse text-sm">
+                        <ul class="flex flex-row font-medium mt-0 space-x-6 md:space-x-8 lg:space-x-12 rtl:space-x-reverse text-sm">
                             <li>
                                 <a 
                                 href="#intro" 
@@ -176,7 +174,7 @@ onUnmounted(() => {
              -->
         </header>
 
-        <main>
+        <main class="pt-[calc(var(--nav-height, 150px))]">
             <slot />
         </main>
     </div>

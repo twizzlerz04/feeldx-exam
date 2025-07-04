@@ -56,17 +56,17 @@ onMounted(() => {
     <section 
         ref="heroSection" 
         id="intro" 
-        class="relative min-h-screen w-full overflow-hidden bg-white light:bg-gray-900"
-        :style="{ paddingTop: navHeight }"
+        class="relative w-full sm:mx-auto sm:pb-4 overflow-hidden bg-white light:bg-gray-900 lg:min-h-screen pt-10"
+        style="height: 400px;"
     >
-        <div class="grid max-w-screen-xl px-4 mx-auto sm:mt-20 lg:mt-30 lg:gap-8 xl:gap-0 lg:grid-cols-12">
+        <div class="grid max-w-screen-xl px-4 mx-auto lg:mt-30 lg:gap-8 xl:gap-0 lg:grid-cols-12">
             <div 
                 class="relative z-10 mr-auto place-self-center lg:col-span-5"
             >
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-primary light:text-primary animate-fade-in-up">Plan</h1>
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-primary light:text-primary animate-fade-in-up delay-200">Visualise</h1>
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-primary light:text-primary animate-fade-in-up delay-400">Transform</h1>
-                <p class="max-w-2xl mb-6 font-light text-secondary lg:mb-8 md:text-lg lg:text-xl light:text-secondary animate-fade-in-up delay-600">We push beyond visual representation, integrating and connecting with your project's requirements, bringing them to life and enhancing clarity to create a truly immersive experience.</p>
+                <p class="max-w-2xl pr-4 mb-6 font-light text-secondary lg:mb-8 md:text-lg lg:text-xl light:text-secondary animate-fade-in-up delay-600">We push beyond visual representation, integrating and connecting with your project's requirements, bringing them to life and enhancing clarity to create a truly immersive experience.</p>
                 <a href="#" class="group inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-primary border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 light:text-primary light:border-gray-700 light:hover:bg-gray-700 light:focus:ring-gray-800 transition-all duration-300 ease-bounce hover:translate-x-1 animate-fade-in-up delay-800">
                     Book a Consultant
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -148,7 +148,7 @@ onMounted(() => {
         :style="{ paddingTop: navHeight }">
         <div class="w-full max-w-screen-xl px-4 py-8 mx-auto">
             <div class=" place-self-center">
-                <h2 class="text-center text-4xl font-extrabold tracking-tight text-primary mb-2">Our Clients</h2>
+                <h2 class="text-center text-4xl font-extrabold tracking-tight text-primary mb-2">Our Services</h2>
                 <p class="max-w-6xl mb-6 font-medium text-secondary sm:text-sm md:text-lg lg:text-xl light:text-secondary">FeelDX delivers tailored visual solutions that drive clarity, engagement, and results. We elevate construction projects and business communications through advanced BIM (3D–7D), multimedia visualisation, and interactive content. From programme development to forensic analysis, our user-driven approach enhances project control, streamlines decision-making, and supports strategic goals. Trusted across sectors, we deliver high-impact content—from interiors to education—that aligns with your vision and maximises project success.</p>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 services">
@@ -427,6 +427,12 @@ onMounted(() => {
 </template>
 
 <style scoped>
+@media (max-width: 1023px) {
+  #intro {
+    min-height: 400px !important;
+    height: 400px !important;
+  }
+}
 .carousel-item {
     transition: transform 0.5s ease-in-out;
 }
