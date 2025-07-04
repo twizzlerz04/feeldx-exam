@@ -18,6 +18,7 @@ cd feeldx-exam
 
 2. Install dependencies:
 ```bash
+composer install
 npm install
 # or
 yarn install
